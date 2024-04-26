@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        #content-frame {
+            position: absolute;
+            top: 100px; /* Adjust based on navbar height */
+            width: 100%;
+            height: calc(100vh - 100px); /* Adjust based on navbar height */
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/liferay.png"></img>
+            </div>
+            <div class="menu">
+                <nav>
+                  <a href="#" onclick="loadPage('pagina1.html')">CONTATO</a>
+                  <a href="#" onclick="loadPage('pagina2.html')">SOBRE NÓS</a>
+                  <a href="#" onclick="loadPage('pagina3.html')">CAMPANHAS</a>
+                  <a href="#" onclick="loadPage('pagina4.html')">DESEMPENHO</a> 
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <iframe id="content-frame" src="pagina1.html" frameborder="0"></iframe>
+    <script src="script.js"></script>
+</body>
+</html>
