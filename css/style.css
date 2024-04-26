@@ -101,10 +101,10 @@ header a {
     color: #fff;
 }
 
-#content-frame {
-    position: absolute;
-    top: 100px; /* Adjust based on navbar height */
-    width: 100%;
-    height: calc(300vh - 100px); /* Adjust based on navbar height */
-    border: none;
+#content-frame{
+            position: absolute;
+            top: 100px; /* Adjust based on navbar height */
+            width: 100%;
+            height: calc(100vh - 100px); /* Adjust based on navbar height */
+            border: none;
 }
