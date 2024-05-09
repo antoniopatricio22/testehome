@@ -7,12 +7,16 @@ var chart = JSC.chart('chartDiv', {
   debug: true,
   type: 'line',
   legend_visible: false,
-  xAxis: {
+  defaultCultureName: "pt-BR",
+  xAxis: { 
     crosshair_enabled: true,
     scale: { type: 'time' }
   },
-  yAxis: { orientation: 'opposite', formatString: 'c' },
+  yAxis: { 
+    orientation: 'opposite', formatString: 'c' 
+  },
   defaultSeries: {
+    
     firstPoint_label_text: '<b>%seriesName</b>',
     defaultPoint_marker: {
       type: 'circle',
