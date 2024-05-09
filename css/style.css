@@ -40,10 +40,25 @@ nav a {
 
 /*====FIM DA NAVBAR====*/
 
+h1 {
+    text-align: center; /* Center align <h1> */
+}
+ 
+p {
+    text-align: justify; /* Justify <p> */
+    margin: 0 auto; /* Center <p> */
+    max-width: 800px; /* Limit width for better readability */
+}
+
+button {
+    display: block; /* Ensure the button takes up the full width of its container */
+    margin: 0 auto; /* Center the button horizontally */
+}
 
 body {
     background-color: white;
     color: black;
+
 }
 
 .titulo {

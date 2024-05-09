@@ -52,8 +52,12 @@ var chart = JSC.chart('chartDiv', {
   ]
 });
 
-// JS para o exportar os Dados - não funcional ainda.
-function exportToCSV() {
+//=======script.js============//
+
+//=======script.js============//
+
+//JS para o exportar os Dados - não funcional ainda.
+function exportToCSV(chart) {
   var csvContent = "data:text/csv;charset=utf-8,";
 
   // Adding series names as header
@@ -73,4 +77,7 @@ function exportToCSV() {
 }
 
 // Attach click event to export button
-document.getElementById("exportButton").addEventListener("click", exportToCSV());
+document.getElementById("exportButton").addEventListener("click", function() {
+  // Assuming 'chart' is a global variable containing the chart object
+  exportToCSV(chart);
+});
