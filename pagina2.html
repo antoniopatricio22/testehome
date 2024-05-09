@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+  <script src="https://code.jscharting.com/latest/jscharting.js"></script> <!-- no lugar do arquivos locais-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js" integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página 2</title>
 </head>
-<body>
 
-<h1>Meta e Arrecadação</h1>
-<p>Situação da Campanha X-2020.</p>
-<div id="chartDiv" style="max-width: 740px;height: 400px;margin: 0px auto;"></div>
-<script src="scripts/JSC/jscharting.js"></script>
-<script src="scripts/script.js"></script>
+<body>
+  <h1>Meta e Arrecadação</h1>
+  <p>Situação da Campanha X-2020.</p>
+  
+  <div id="chartDiv" style="max-width: 740px;height: 400px;margin: 0px auto;"></div>
+  
+  <button id="exportButton">Exportar Dados</button>
+  <script src="scripts/script.js"></script>
 </body>
+
 </html>

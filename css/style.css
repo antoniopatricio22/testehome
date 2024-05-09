@@ -18,10 +18,10 @@ header {
 }
 
 .logo img {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 5px solid #f1f0f1;
+    width: 100px;
+    height: 35px;
+    /*border-radius: 80%;*/
+    /*border: 10px solid #f1f0f1;*/
 }
 
 nav {
@@ -50,6 +50,10 @@ body {
     text-align: center;
 }
 
+.containerTemp {
+    text-align: center; /* Aligns text content to the center */
+  }
+
 /*====CARDS DE NOTICIA====*/
 .card_cotainer {
     display: flex;
@@ -76,6 +80,12 @@ body {
     padding: 16px;
 }
 
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 .conteudo h3 {
     font-size: 28px;
     margin-bottom: 8px;
@@ -100,6 +110,9 @@ body {
 
 .projeto {
     font-family: 'Nunito', sans-serif;
+    text-align: center; /* Aligns text content to the center */
+    margin: 0 auto; /* Centers the section horizontally */
+    max-width: 800px; /* Adjust the width as needed */
 }
 
 #content-frame{

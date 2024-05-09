@@ -51,3 +51,26 @@ var chart = JSC.chart('chartDiv', {
     },
   ]
 });
+
+// JS para o exportar os Dados - não funcional ainda.
+function exportToCSV() {
+  var csvContent = "data:text/csv;charset=utf-8,";
+
+  // Adding series names as header
+  csvContent += "Date,Meta,Valor Arrecadado\n";
+
+  // Adding data points
+  chart.options.series.forEach(function(series) {
+    series.points.forEach(function(point) {
+      csvContent += point[0] + "," + point[1] + ",";
+      csvContent += "\n";
+    });
+  });
+
+  // Create a Blob and initiate download
+  var blob = new Blob([csvContent], { type: "text/csv;charset=utf-8" });
+  saveAs(blob, "chart_data.csv");
+}
+
+// Attach click event to export button
+document.getElementById("exportButton").addEventListener("click", exportToCSV());
