@@ -1,0 +1,197 @@
+/* Definições gerais para o corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte usada no corpo */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  background-color: #f4f4f4; /* Define a cor de fundo */
+}
+
+/* Estilos para o menu de navegação */
+nav {
+  position: fixed; /* Fixa a posição do menu no topo */
+  top: 0; /* Alinha no topo da página */
+  left: 0; /* Alinha na esquerda da página */
+  width: 100%; /* Ocupa toda a largura da tela */
+  display: flex; /* Usa flexbox para o layout */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between; /* Espaça os itens uniformemente */
+  background-color: #ffffff; /* Define a cor de fundo */
+  padding: 3px 5px; /* Define o padding interno */
+  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+  box-shadow: 0px 1px 5px; /* Adiciona uma sombra */
+}
+
+/* Estilos para o logotipo */
+.logo {
+  margin-left:  40%;
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-right: auto; /* Define a margem direita */
+}
+
+/* Estilos para a imagem do logotipo */
+.logo img {
+  width: 150px; /* Define a largura da imagem */
+  height: auto; /* Ajusta a altura proporcionalmente */
+  align-items: center; /* Centraliza verticalmente */
+}
+
+/* Estilos para o botão de voltar */
+.back-button {
+  margin-left: 0px; /* Define a margem esquerda */
+  border: none; /* Remove a borda */
+  border-radius: 10px; /* Define a borda arredondada */
+  padding: 9px; /* Define o padding interno */
+  background: #0b5fff; /* Define a cor de fundo */
+  color: #ffffff; /* Define a cor do texto */
+  font-size: 12pt; /* Define o tamanho da fonte */
+  outline: none; /* Remove a borda de foco */
+  box-sizing: initial; /* Define o box-sizing */
+  cursor: pointer; /* Mostra o cursor de ponteiro */
+  transition: background-color 0.1s ease; /* Adiciona transição de cor */
+}
+
+/* Estilos para o botão de voltar ao passar o mouse */
+.back-button:hover {
+  background-color: #2b369b; /* Altera a cor de fundo */
+}
+
+/* Estilos para o título da página */
+.titulopage {
+  text-align: left; /* Alinha o texto à esquerda */
+  height: 150px; /* Define a altura */
+  display: flex; /* Usa flexbox para o layout */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 60px; /* Define a margem superior */
+  padding: 0; /* Ajusta o padding */
+  width: 90%; /* Define a largura */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+}
+
+/* Estilos para o contêiner principal */
+.conteiner {
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  width: 90%; /* Define a largura */
+  margin-top: 20px; /* Define a margem superior */
+}
+
+/* Estilos para o wrapper do campo de busca */
+.wrapper {
+  width: 100%; /* Ocupa toda a largura disponível */
+  margin-bottom: 20px; /* Define a margem inferior */
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+}
+
+/* Estilos para o campo de busca */
+.search-container {
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  width: 100%; /* Ocupa toda a largura disponível */
+}
+
+.search-container input {
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 10px; /* Define o padding interno */
+  font-size: 16px; /* Define o tamanho da fonte */
+  border: 1px solid #ccc; /* Define a borda */
+  border-radius: 5px; /* Define a borda arredondada */
+  box-sizing: border-box; /* Inclui o padding na largura e altura */
+}
+
+/* Estilos para o contêiner dos cards */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%; /* Defina a largura do container */
+  justify-content: space-around; /* Distribua os cards uniformemente */
+}
+
+/* Estilos para os cards */
+.card {
+  width: 250px; /* Define a largura dos cards */
+  background-color: #ffffff; /* Define a cor de fundo */
+  border: 1px solid #ccc; /* Define a borda */
+  border-radius: 8px; /* Define a borda arredondada */
+  border: 1px solid #0b5fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  margin-bottom: 20px; /* Define a margem inferior */
+  padding: 20px; /* Define o padding interno */
+  cursor: pointer; /* Mostra o cursor de ponteiro */
+  transition: transform 0.2s; /* Adiciona transição */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Aumenta o card ao passar o mouse */
+}
+
+/* Estilos para o conteúdo dentro dos cards */
+.card .content {
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.titulocard {
+  font-size: 1.5em; /* Define o tamanho da fonte */
+  margin-bottom: 10px; /* Define a margem inferior */
+  color: #007BFF; /* Define a cor do título */
+}
+
+.card p {
+  font-size: 1em; /* Define o tamanho da fonte */
+  color: #555; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Define a margem inferior */
+}
+
+/* Estilos para os botões nos cards */
+.card-button {
+  padding: 10px 20px; /* Define o padding interno */
+  background-color: #007BFF; /* Define a cor de fundo */
+  color: #ffffff; /* Define a cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Define a borda arredondada */
+  cursor: pointer; /* Mostra o cursor de ponteiro */
+  transition: background-color 0.2s; /* Adiciona transição de cor */
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilos para o rodapé */
+footer {
+  width: 100%; /* Ocupa toda a largura disponível */
+  background-color: transparent; /* Define a cor de fundo */
+  color: black; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px 0; /* Define o padding interno */
+  margin-top: auto; /* Adiciona margem superior automática */
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+      width: 45%; /* Ajusta a largura dos cards para telas menores */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .conteiner {
+      flex-direction: column; /* Organiza os filhos em coluna */
+  }
+
+  .titulopage {
+      display: none; /* Esconde o título da página em telas pequenas */
+  }
+
+  .card {
+      width: 90%; /* Ajusta a largura dos cards para telas pequenas */
+  }
+}

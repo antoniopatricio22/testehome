@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/novacampanha.css">
+    <link rel="icon" type="imagem/png" href="imagens/favicon.ico">
+    <title>Nova Campanha</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="imagens/Liferay_Logo_No_Reg_Full_Color-Digital.png" alt="Logo da Liferay">
+        </div>
+    </nav>
+    
+    <div class="titulopage"><h1 >Cadastrar uma nova campanha:</h1></div>
+    <button onclick="window.location.href='HomeComite.html';" class="back-button">Voltar</button>
+    <div class="conteiner">
+        
+        <div onclick="window.location.href='';" class="card">
+            <div class="cardimage"><img src="imagens/Destination-rafiki.svg" alt="imagem"></div>
+            <h1 class="titulocard">Cadastre uma nova campanha:</h1>
+
+            <h1>Formulário de Contato</h1>
+
+            <!-- <form action="processar_formulario.php" method="post"> -->
+            <label class = "center" for="nome">Nome:</label>
+            <input class = "center" type="text" id="nome" name="nome" required>
+
+            <label class = "center" for="email">Email:</label>
+            <input class = "center" type="email" id="email" name="email" required>
+
+            <label class = "center"  for="assunto">Assunto:</label>
+            <input class = "center"  type="text" id="assunto" name="assunto" required>
+
+            <label class = "center"  for="mensagem">Descrição da Campanha:</label>
+            <textarea class = "center"  id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button class = "center" class="card-button">inserir</button>
+        </div>
+        
+    </div>
+    
+    <script src="javascript/Adecao.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@
 /*====NAVBAR====*/
 header {
     background-color: #f1f0f1;
-    border-radius: 30px;
+    border-radius: 60px;
     margin: 0 5px 5px 0; /* Adjusted margin values */
     box-shadow: rgba(38, 57, 77, 0.7) 0px 20px 30px -10px; /* Adjusted shadow color */
     position: relative; /* Required for absolute positioning of logo */

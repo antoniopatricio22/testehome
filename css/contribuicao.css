@@ -1,0 +1,255 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+  
+nav {
+  position: fixed; /* Fixa a posição do menu no topo */
+  top: 0; /* Alinha no topo da página */
+  left: 0; /* Alinha na esquerda da página */
+  width: 100%; /* Ocupa toda a largura da tela */
+  display: flex; /* Usa flexbox para o layout */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between; /* Espaça os itens uniformemente */
+  background-color: #ffffff; /* Define a cor de fundo */
+  padding: 3px 5px; /* Define o padding interno */
+  z-index: 1000; /* Garante que o menu fique acima de outros elementos */
+  box-shadow: 0px 1px 5px; /* Adiciona uma sombra */
+}
+  
+.logo {
+  margin-left:  40%;
+  display: flex; /* Usa flexbox para o layout */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-right: auto; /* Define a margem direita */
+}
+  
+.logo img {
+    width: 150px;
+    height: auto;
+    align-items: center;
+}
+  
+.back-button {
+    margin-left: 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    background: #0b5fff;
+    color: #ffffff;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: initial;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+  
+.back-button:hover {
+    background-color: #2b369b;
+}
+/*fim da navbar*/
+
+.titulopage {
+    margin-top: 150px;
+    margin-left: 40px;
+}
+/* CSS/contribui.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 90%;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    
+}
+
+.card-grafico {
+    grid-column: 1 / 2; /* Ocupa a primeira coluna */
+    grid-row: 1 / 4; /* Ocupa todas as três linhas */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.card-grafico canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.card-campanha {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.card-campanha:nth-child(2) {
+    grid-column: 2 / 3; /* Ocupa a segunda coluna */
+    grid-row: 1 / 2; /* Primeira linha */
+}
+
+.card-campanha:nth-child(3) {
+    grid-column: 2 / 3; /* Ocupa a segunda coluna */
+    grid-row: 2 / 3; /* Segunda linha */
+}
+
+.card-campanha:nth-child(4) {
+    grid-column: 2 / 3; /* Ocupa a segunda coluna */
+    grid-row: 3 / 4; /* Terceira linha */
+}
+
+.titulo-card, .valor-number {
+    margin: 0;
+}
+
+.titulo-card {
+    margin-bottom: 10px;
+}
+.titulopage2 {
+  text-align: left; /* Alinha o texto à esquerda */
+  height: 150px; /* Define a altura */
+  display: flex; /* Usa flexbox para o layout */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 60px; /* Define a margem superior */
+  padding: 0; /* Ajusta o padding */
+  width: 90%; /* Define a largura */
+  justify-content: flex-start; /* Alinha os itens à esquerda */
+  }
+  .wrapper {
+    width: 100%; /* Ocupa toda a largura disponível */
+    margin-bottom: 20px; /* Define a margem inferior */
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+  }
+  
+  /* Estilos para o campo de busca */
+  .search-container {
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    width: 100%; /* Ocupa toda a largura disponível */
+  }
+  
+  .search-container input {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Define o padding interno */
+    font-size: 16px; /* Define o tamanho da fonte */
+    border: 1px solid #ccc; /* Define a borda */
+    border-radius: 5px; /* Define a borda arredondada */
+    box-sizing: border-box; /* Inclui o padding na largura e altura */
+  }
+  
+  
+/* Estilos para o contêiner 2 */
+.container2 {
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  width: 90%;
+  margin-top: 20px; /* Define a margem superior */
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%; /* Defina a largura do container */
+  justify-content: space-around; /* Distribua os cards uniformemente */
+}
+
+/* Estilos para os cards */
+/* Estilos para os cards */
+.card {
+  width: 250px; /* Define a largura dos cards */
+  background-color: #ffffff; /* Define a cor de fundo */
+  border: 1px solid #ccc; /* Define a borda */
+  border-radius: 8px; /* Define a borda arredondada */
+  border: 1px solid #0b5fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+  margin-bottom: 20px; /* Define a margem inferior */
+  padding: 20px; /* Define o padding interno */
+  cursor: pointer; /* Mostra o cursor de ponteiro */
+  transition: transform 0.2s; /* Adiciona transição */
+  display: flex; /* Usa flexbox para alinhar o conteúdo verticalmente */
+  flex-direction: column; /* Organiza o conteúdo em coluna */
+  justify-content: center; /* Centraliza o conteúdo verticalmente */
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+/* Estilos para o conteúdo dentro dos cards */
+.card .content {
+  display: flex; /* Usa flexbox para o layout */
+  flex-direction: column; /* Organiza os filhos em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilos para o título do card */
+.card h1 {
+  
+  margin: 0; /* Remove as margens padrão */
+  font-size: 1.5em; /* Define o tamanho da fonte */
+  margin-bottom: 10px; /* Define a margem inferior */
+  color: #007BFF; /* Define a cor do título */
+}
+
+/* Estilos para o texto do card */
+.card p {
+  margin: 10px 0; /* Define uma margem em cima e embaixo */
+  font-size: 1em; /* Define o tamanho da fonte */
+  color: #555; /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  margin-bottom: 20px; /* Define a margem inferior */
+}
+
+/* Estilos para os botões nos cards */
+.card-button {
+  
+  padding: 10px 20px; /* Define o padding interno */
+  background-color: #007BFF; /* Define a cor de fundo */
+  color: #ffffff; /* Define a cor do texto */
+  border: none; /* Remove a borda */
+  border-radius: 5px; /* Define a borda arredondada */
+  cursor: pointer; /* Mostra o cursor de ponteiro */
+  transition: background-color 0.2s; /* Adiciona transição de cor */
+}
+
+.card-button:hover {
+  background-color: #0056b3; /* Altera a cor de fundo ao passar o mouse */
+}
+
+  footer {
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+  }
+  

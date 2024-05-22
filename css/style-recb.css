@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    background: #0b5fff;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0b5fff;
+    padding: 3px 5px;
+    z-index: 1000;
+}
+
+.logo {
+    display: inline-block;
+}
+
+.logo img {
+    width: 150px; 
+    height: auto;
+    align-items: center;
+}
+
+.main-rec{
+    width: 100vw;
+    height: 100vh;
+    background: #0b5fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-rec{
+    width: 75vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px #272833;
+}
+
+.card-rec .text-card{
+    font-family: sans-serif;
+    padding: auto;
+}
+
+.button-card > input {
+    
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #b1d1dd;
+    color: #000000de;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+.button-card{
+    color: #232833;
+    margin: 10px;
+}
+
+.btn-rec {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: #0b5fff;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #28349e;
+    transition: background-color 0.1s ease;
+    text-align: center;
+    text-decoration: none;
+}
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login > h1 {
+        display: none;
+    }
+    .left-login{
+        width: 100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vh;
+    }
+    .card-login{
+        width: 90%;
+    }
+    nav{
+        width: auto;
+    }
+}

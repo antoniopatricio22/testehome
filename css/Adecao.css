@@ -1,0 +1,169 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 3px 5px;
+  z-index: 1000;
+  box-shadow: 0px 1px 5px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-right: 608px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  align-items: center;
+}
+
+.titulopage {
+  width: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  margin-left: 450px;
+  padding: auto;
+}
+
+.back-button {
+  margin-left: 0px;
+  border: none;
+  border-radius: 10px;
+  padding: 9px;
+  background: #0b5fff;
+  color: #ffffffde;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: initial;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.back-button:hover {
+  background-color: #2b369b;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+  margin-left: 40px; /* Ajuste conforme necessário */
+}
+
+#search-container {
+  margin: 1em 0;
+}
+
+#search-input {
+  background-color: transparent;
+  width: 20%;
+  border-bottom: 2px solid #110f29;
+  padding: 1em 0.3em;
+}
+
+#search-input:focus {
+  border-bottom-color: #0b5fff;
+  align-items: center;
+}
+
+.button-search {
+  padding: 1em 2em;
+  margin-left: 75px; /* Ajuste conforme necessário */
+  background-color: #0b5fff;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+.button-search:hover{
+  background-color: #2b369b;
+}
+
+.card {
+  width: 92%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  background-color: #f1f0f1;
+  border-left: 3px solid #4895ff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.card p {
+  color: #3f3f42;
+  font-size: 16px;
+}
+
+.cardimage {
+  float: right;
+  max-width: 64px;
+  max-height: 64px;
+}
+
+.card-button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #0b5fff;
+  color: #ffffffde;
+  font-size: 12pt;
+  outline: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.card-button:hover {
+  background-color: #2b369b;
+}
+
+@media only screen and (max-width: 950px) {
+  .card {
+      width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .titulopage {
+      display: none;
+  }
+
+  .card {
+      width: 90%;
+  }
+
+  .nav {
+      width: auto;
+  }
+}

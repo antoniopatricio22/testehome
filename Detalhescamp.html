@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/detalhescamp.css">
+    <link rel="icon" type="imagem/png" href="imagens/favicon.ico">
+    <title>Detalhes da Campanha</title>
+</head>
+<body>
+    <nav>
+        <button onclick="window.location.href='contribuicao.html';" class="back-button">Voltar</button>
+        <div class="logo">
+            <img src="imagens/Liferay_Logo_No_Reg_Full_Color-Digital.png" alt="Logo da Liferay">
+        </div>
+    </nav>
+    <h1 class="titulopage">Detalhes da Campanha:</h1>
+    <div class="container">
+        <div class="card-campanha-detalhes">
+            <h2>Menos é mais</h2>
+            <p> <strong> Descrição:</strong> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book..</p>
+            <p> <strong> Objetivos:</strong> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+        <div class="card-contribuicoes">
+            <div class="cards">
+                <div class="card-campanha">
+                    <h2 class="titulo-card">Total de campanhas</h2>
+                    <h3 class="valor-number">10</h3>
+                </div>
+                <div class="card-campanha">
+                    <h2 class="titulo-card">Contribuições Gerais</h2>
+                    <h3 class="valor-number">50</h3>
+                </div>
+                <div class="card-campanha">
+                    <h2 class="titulo-card">Suas Contribuições</h2>
+                    <h3 class="valor-number">5</h3>
+                </div>
+            </div>
+            <div class="card-grafico">
+                <h4>Gráfico das Contribuições</h4>
+                <canvas id="contributionsChart"></canvas>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,235 @@
+/* CSS/contribui.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 3px 5px;
+    z-index: 1000;
+    box-shadow: 0px 1px 5px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-right: 47%;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    align-items: center;
+}
+
+.back-button {
+    margin-left: 0px;
+    border: none;
+    border-radius: 10px;
+    padding: 9px;
+    background: #0b5fff;
+    color: #ffffff;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: initial;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.back-button:hover {
+    background-color: #2b369b;
+}
+
+.titulopage {
+    text-align: center;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    padding: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.card-campanha-detalhes {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 1px solid #0b5fff;
+}
+
+.card-contribuicoes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card-campanha {
+    flex: 1;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 200px; /* Altura dos cards */
+}
+
+.card-grafico {
+    width: 100%;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #0b5fff;
+}
+
+.card-grafico canvas {
+    width: 100% !important;
+    height: 400px; /* Altura do gráfico */
+}
+
+.titulo-card, .valor-number {
+    margin: 0;
+}
+
+.titulo-card {
+    margin-bottom: 10px;
+}
+
+.button-aderir {
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 1rem;
+    transition: opacity 0.4s;
+}
+
+.button-aderir:hover {
+    background-color: #2b369b;
+    opacity: 1;
+}
+
+/* Adicionando estilos para o botão open-modal */
+#open-modal {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    padding: .6rem 1.2rem;
+    font-size: 1rem;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5; /* Colocando o fade atrás do modal */
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 10;
+    width: 500px;
+    max-width: 90%;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+/* Adicionando a classe hide para ocultar modal e fade */
+#modal.hide,
+#fade.hide {
+    display: none;
+}
+
+footer {
+    margin-top: 10px;
+    width: 100%;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: static;
+    bottom: 0;
+  }
+@media only screen and (max-width: 950px) {
+    .card {
+        width: 85%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+  
+    .titulopage {
+        display: none;
+    }
+  
+    .card {
+        width: 90%;
+    }
+  
+    .nav {
+        width: auto;
+    }
+  }
